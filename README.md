@@ -94,6 +94,8 @@ New Item, name `cicd-project-5`, Pipeline. Under Build Triggers, tick "GitHub ho
 
 In your GitHub repository, Settings, Webhooks, Add webhook. Payload URL `http://<your-host>:8080/github-webhook/` (trailing slash), content type `application/json`, the push event. If Jenkins is not reachable from GitHub, fall back to the job's Poll SCM option or a tunnel such as ngrok.
 
+## small change to trigger pipeline automatically
+
 ## Step 8: Run it end to end
 
 Make a small commit and push. The pipeline starts on its own. Watch all ten stages. On success, get the app URL and open it:
