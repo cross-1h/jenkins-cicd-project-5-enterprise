@@ -23,4 +23,16 @@ class CalculatorTest {
         assertEquals(4, calculator.subtract(5, 1));
         assertEquals(-2, calculator.subtract(1, 3));
     }
+
+    @Test
+    void multipliesTwoNumbers() {
+        assertEquals(6, calculator.multiply(2, 3));
+        assertEquals(0, calculator.multiply(0, 5));
+    }
+
+    @Test
+    void dividesTwoNumbers() {
+        assertEquals(2, calculator.divide(6, 3));
+        assertEquals(0, calculator.divide(0, 5));
+    }
 }
