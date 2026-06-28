@@ -19,17 +19,10 @@ public class Calculator {
     }
 
     public int divide(int a, int b) {
+        int codeSmell = 0; // This is a code smell, but it's here to demonstrate a failing test case
         if (b == 0) {
             throw new IllegalArgumentException("Division by zero is not allowed");
         }
         return a / b;
-    }
-
-    public int modulo(int a, int b) {
-        int codeSmell = 0; // This is a code smell, but it's here to demonstrate a failing test case
-        if (b == 0) {
-            throw new IllegalArgumentException("Modulo by zero is not allowed");
-        }
-        return a % b;
     }
 }
